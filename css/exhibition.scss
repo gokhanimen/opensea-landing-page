@@ -9,21 +9,42 @@
 }
 $font-rubik: 'Rubik', sans-serif;
 .showcase-area{
-    position: relative;
     display: flex;
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    &::after {
-        content: "";
-        position: absolute;
-        height: 45px;
-        width: 100%;
-        top: 0;
-        background-color: #000;
+}
+.header {
+    background-color: #000;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $font-rubik;
+        font-weight: 500;
+        font-size: 16px;
+        & li {
+            & a {
+                transition: ease-in-out 3s;
+                color: #fff;
+                text-decoration: none;
+            }
+            &:hover {
+                a {
+                    color: #F03B3F;
+                }
+            }
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
     }
 }
-
 .exhibition-area {
     width: 100%;
     height: 100vh;
