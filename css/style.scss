@@ -43,7 +43,7 @@ $font-rubik: 'Rubik', sans-serif;
         align-items: center;
         justify-content: flex-end;
         padding: 30px;
-        & .btn-github{
+        & .btn-twitter{
             position: relative;
             font-family: $font-rubik;
             font-weight: 500;
@@ -51,7 +51,7 @@ $font-rubik: 'Rubik', sans-serif;
             line-height: 27px;
             color: #fff;
             padding: 5px 10px;
-            background-color: #000;
+            background-color: #0399c7;
             border-radius: 10px;
             animation-name: shake;
             animation-duration: 3s;
@@ -345,22 +345,18 @@ $font-rubik: 'Rubik', sans-serif;
     }
 }
 
-.social{
+.social-media{
     display: flex;
     align-items: center;
     justify-content: center;
-    &-media{
-        padding: 20px;
-        & .social-account{
-            display: flex;
-            justify-content: space-between;
-            width: 210px;
-            & a{
-                & svg{
-                    height: 50px;
-                    width: 50px;
-                }
-            }
+    padding: 20px;
+    & a{
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+        & svg{
+            height: 50px;
+            width: 50px;
         }
     }
 }
